@@ -7,12 +7,10 @@ import ChatBot from '../Components/ChatBot'
 const Home = () => {
   return (
     <div>
-        <Navbar/>
         <div className="bg-black flex-col flex-grow">
           <Hero/>
           <Benefits/>
-       
-        <ChatBot/>
+          <ChatBot/>
         </div>
     </div>
   )
