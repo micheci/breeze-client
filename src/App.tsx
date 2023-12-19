@@ -3,6 +3,7 @@ import Home from './Views/Home';
 import Chat from './Views/Chat';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar';
+import Adhd from './Views/Adhd';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/adhd" element={<Adhd />}/>
       </Routes>
     </Router>
   );
