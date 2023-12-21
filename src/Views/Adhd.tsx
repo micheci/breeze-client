@@ -2,6 +2,7 @@ import React from 'react'
 import InfoBox from '../Components/InfoBox'
 import Causes from '../Components/Causes'
 import adhdHero from '../Constants/adhdPics/adhdHero.png'
+import '../Styles/causes.css'
 
 const Adhd = () => {
     const innatentiveData={
@@ -55,13 +56,13 @@ const Adhd = () => {
         <h1>Types of ADHD</h1>
 
         </div>
-        <div className="info  justify-center flex gap-4 ">
+        <div className="info  justify-center flex gap-4 mb-6 ">
             <InfoBox {...innatentiveData} />
             <InfoBox {...hyperactivityData} />
         </div>
         
         <div className="causes flex justify-center flex-col items-center ">
-          <h1>Causes</h1>
+          <h1 className='text-3xl mb-2'>What Causes this?</h1>      
           <Causes/>
         </div>
 
