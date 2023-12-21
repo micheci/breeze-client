@@ -1,5 +1,7 @@
 import React from 'react'
 import InfoBox from '../Components/InfoBox'
+import Causes from '../Components/Causes'
+import adhdHero from '../Constants/adhdPics/adhdHero.png'
 
 const Adhd = () => {
     const innatentiveData={
@@ -18,24 +20,38 @@ const Adhd = () => {
         ],
     }
     const hyperactivityData={
-        name: 'Example Box',
-        description: 'This is a sample box with a name, description, and bullet points.',
+        name: 'HyperActivity',
+        description: 'Getting distracted, having poor concentration and organizational skills',
         bulletPoints: [
-          'Bullet point 1',
-          'Bullet point 2',
-          'Bullet point 3',
+         'squirm, fidget, or feel restless',
+          'have difficulty sitting still',
+         'talk constantly',
+         'touch and play with objects, even when inappropriate to the task at hand',
+         'have trouble engaging in quiet activities',
+         'are constantly “on the go”',
+         'are impatient',
+         'act out of turn and don’t think about consequences of actions'
+
         ],
     }
 
   return (
-     <div className="flex  flex-col justify-center ">
-        <div className="definition">
-        <p>Attention Deficit Hyperactivity Disorder (ADHD) is a
-            neurodevelopmental disorder that affects both children and adults. It is characterized by persistent patterns of inattention, hyperactivity, and impulsivity that can impact various aspects of daily life. The symptoms of ADHD can manifest in different ways and can be categorized into two main types: inattentive type
-        , hyperactive-impulsive type, or a combination of both.</p>
-
+     <div className="flex bg-purple-200 flex-col justify-center ">
+      {/* TItle/definition */}
+      <h1 className='text-center text-6xl mt-6 '>ADHD</h1>
+      <p className='text-center text-2xl mb-12'>constant distraction and restlessness</p>
+        <div className="definition mx-auto w-64rem mb-6">
+          <h3 className='text-center text-3xl mb-1'>What is ADHD?</h3>
+          <p className=' text-center text-xl'> Attention Deficit Hyperactivity Disorder (ADHD) is a
+              neurodevelopmental disorder that affects both children and adults. It is characterized by persistent patterns of inattention, hyperactivity, and impulsivity that can impact various aspects of daily life. The symptoms of ADHD can manifest in different ways and can be categorized into two main types: inattentive type
+              ,hyperactive-impulsive type, or a combination of both.</p>
         </div>
-        <div className="typeHeader text-center">
+      {/* IMAGE */}
+        <div className="flex mb-6 items-center justify-center">
+          <img className='w-36' src={adhdHero} alt="" />
+        </div>    
+      {/*Types  */}
+        <div className="typeHeader  text-3xl mb-4 text-center">
         <h1>Types of ADHD</h1>
 
         </div>
@@ -43,6 +59,12 @@ const Adhd = () => {
             <InfoBox {...innatentiveData} />
             <InfoBox {...hyperactivityData} />
         </div>
+        
+        <div className="causes flex justify-center flex-col items-center ">
+          <h1>Causes</h1>
+          <Causes/>
+        </div>
+
     </div>
   )
 }
