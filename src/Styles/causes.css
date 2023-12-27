@@ -1,18 +1,84 @@
 /* Causes.css */
 
 .causes {
-  background: url('../Constants/smileCloud.png') repeat-y; /* Replace 'path/to/cloud.png' with your cloud image */
+  /* background: url('../Constants/smileCloud.png') repeat-y; Replace 'path/to/cloud.png' with your cloud image */
   width: 100%;
+  position:relative;
+  overflow: hidden; /* Ensure that anything overflowing is hidden */
+
   height: 100%; /* Cover the full height of the container */
-  animation: moveClouds 30s linear infinite;
+  /* animation: moveClouds1 30s linear infinite; */
 }
 
-@keyframes moveClouds {
+.cloud1 {
+  background: url('../Constants/newCloud.png') ;
+  width:336px;
+  height: 250px;
+  position: absolute; /* Change to absolute for proper positioning */
+  animation: moveClouds1 8s linear infinite;
+}
+
+@keyframes moveClouds1 {
   from {
-    background-position: 0 0;
+    top:0;
+    left: -50px; /* Start from the left side, slightly outside the view */
   }
   to {
-    background-position: 100% 0;
+    top:0px;
+   left:100%;
   }
 }
+.cloud2 {
+  background: url('../Constants/newCloud.png') ;
+  width:336px;
+  height: 250px;
+  position: absolute; /* Change to absolute for proper positioning */
+  animation: moveClouds2 16s linear infinite;
+}
 
+@keyframes moveClouds2 {
+  from {
+    top:300px;
+    left: -50px; /* Start from the left side, slightly outside the view */
+  }
+  to {
+    top:300px;
+   left:100%;
+  }
+}
+.cloud3 {
+  background: url('../Constants/newCloud.png') ;
+  width:336px;
+  height: 250px;
+  position: absolute; /* Change to absolute for proper positioning */
+  animation: moveClouds3 10s linear infinite;
+}
+
+@keyframes moveClouds3 {
+  from {
+    top:650px;
+    left: -50px; /* Start from the left side, slightly outside the view */
+  }
+  to {
+    top:650px;
+   left:100%;
+  }
+}
+.cloud4 {
+  background: url('../Constants/newCloud.png') ;
+  width:336px;
+  height: 250px;
+  position: absolute; /* Change to absolute for proper positioning */
+  animation: moveClouds4 20s linear infinite;
+}
+
+@keyframes moveClouds4 {
+  from {
+    top:950px;
+    left: -50px; /* Start from the left side, slightly outside the view */
+  }
+  to {
+    top:950px;
+   left:100%;
+  }
+}
