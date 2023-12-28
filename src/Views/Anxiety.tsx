@@ -4,7 +4,7 @@ import Causes from '../Components/Causes'
 import adhdHero from '../Constants/anxietyPics/anxietyHer.jpg'
 import '../Styles/causes.css'
 import Treatment from '../Components/Treatment'
-import dnaPic from '../Constants/adhdPics/dna.png'
+import trauma from '../Constants/anxietyPics/trauma.png'
 
 import neuro from '../Constants/adhdPics/neuro.png'
 import tree from '../Constants/adhdPics/tree.png'
@@ -66,8 +66,8 @@ const phobiasAnxiety={
 }
 const anxietyCausesData=[{
   name: 'Anxiety Causes ',
-  images: [dnaPic, neuro, tree, brainInjury, preg],
-  description: ['Genetics','Nuero','Environmental','Brain Injury','Pregnancy'],
+  images: [trauma, neuro, tree, brainInjury, preg],
+  description: ['Trauma and Stressful Life Events','Nuero','Environmental','Brain Injury','Pregnancy'],
 }]
 
 const Anxiety = () => {
